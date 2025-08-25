@@ -1,0 +1,6 @@
+---
+alwaysApply: true
+---
+
+- Use tailwind for styling
+- Prevent duplication in styling

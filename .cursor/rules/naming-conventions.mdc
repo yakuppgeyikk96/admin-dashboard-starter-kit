@@ -1,0 +1,7 @@
+---
+alwaysApply: true
+---
+
+- Use lowercase with dashes for directories (e.g., components/auth-wizard).
+- Use arrow function and default export for React components
+- Make React components and their props strictly typed

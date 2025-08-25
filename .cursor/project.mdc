@@ -1,0 +1,66 @@
+---
+alwaysApply: true
+---
+
+- Project Tech Stack
+  Next.js 15
+  Tailwindcss
+  Typescript
+
+1. Auth (Kimlik Doğrulama)
+
+✅ Login
+
+✅ Register
+
+✅ Forgot Password / Reset Password
+
+✅ Role-based access (admin, user) – en basit haliyle bile olmalı
+
+2. Dashboard (Ana Panel)
+
+✅ Stat Cards (örn. gelir, kullanıcı sayısı, satış adedi)
+
+✅ Basit Chart (Line, Bar, Pie – Recharts kullanabilirsin)
+
+✅ Recent Activity / Notifications listesi
+
+3. User Management
+
+✅ User List (tablo)
+
+✅ User Details Page
+
+✅ CRUD (create/edit/delete user)
+
+4. Project / Item Management (Generic CRUD)
+
+✅ Tablo (sortable, filterable, searchable)
+
+✅ Add / Edit / Delete modal for items
+
+✅ Detail view
+
+(Bunu generic yaparsan → “Product”, “Project”, “Task”, “Event” gibi farklı nişlere uyarlayabilirsin 🚀)
+
+5. Settings
+
+✅ Profile Settings (isim, email, şifre değişimi)
+
+✅ Account Settings (tema seçimi: light/dark)
+
+✅ Basit notification preferences
+
+6. UI Components Showcase (Bonus – Developer için değerli)
+
+✅ Tables
+
+✅ Forms (input, textarea, select, toggle, datepicker)
+
+✅ Modals
+
+✅ Tabs / Accordions
+
+✅ Toasts / Alerts
+
+👉 Bu sayfa aslında “component library demo” gibi olur, ürün değerini yükseltir.

@@ -1,0 +1,6 @@
+---
+alwaysApply: true
+---
+
+- Minimize 'use client', 'useEffect', and 'setState'; favor React Server Components (RSC).
+- Use dynamic loading for non-critical components.
