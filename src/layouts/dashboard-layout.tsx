@@ -20,7 +20,7 @@ export default async function DashboardLayout({
           <div className="flex flex-col flex-1 min-w-0 py-2.5 px-4">
             <AppNavbar />
             <main className="flex-1 overflow-y-auto overflow-x-hidden">
-              <div className="container mx-auto py-4">{children}</div>
+              <div className="max-w-screen mx-auto py-4">{children}</div>
             </main>
           </div>
         </div>

@@ -11,7 +11,7 @@ export default function AppSidebarHeader() {
   return (
     <SidebarHeader
       className={cn(
-        "flex flex-row items-center p-4 bg-card",
+        "flex flex-row items-center p-4 bg-card rounded-md",
         open ? "justify-between" : "justify-center"
       )}
     >

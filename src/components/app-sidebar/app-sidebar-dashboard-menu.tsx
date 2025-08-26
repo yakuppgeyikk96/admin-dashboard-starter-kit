@@ -9,14 +9,26 @@ import { dashboardSidebarItems } from "@/constants/sidebar-items";
 export default function AppSidebarDashboardMenu() {
   const pathname = usePathname();
 
+  const isActive = (url: string) => {
+    return pathname === url;
+  };
+
   return (
     <SidebarMenu>
       {dashboardSidebarItems.map((item) => (
         <SidebarMenuItem key={item.title}>
-          <SidebarMenuButton asChild isActive={item.url === pathname}>
+          <SidebarMenuButton asChild isActive={isActive(item.url)}>
             <Link href={item.url}>
               <item.icon />
-              <span>{item.title}</span>
+              <span
+                className={
+                  isActive(item.url)
+                    ? "text-sidebar-accent-foreground font-semibold"
+                    : "text-sidebar-foreground hover:text-sidebar-accent-foreground"
+                }
+              >
+                {item.title}
+              </span>
             </Link>
           </SidebarMenuButton>
         </SidebarMenuItem>
