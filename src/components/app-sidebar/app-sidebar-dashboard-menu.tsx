@@ -20,15 +20,7 @@ export default function AppSidebarDashboardMenu() {
           <SidebarMenuButton asChild isActive={isActive(item.url)}>
             <Link href={item.url}>
               <item.icon />
-              <span
-                className={
-                  isActive(item.url)
-                    ? "text-sidebar-accent-foreground font-semibold"
-                    : "text-sidebar-foreground hover:text-sidebar-accent-foreground"
-                }
-              >
-                {item.title}
-              </span>
+              <span className="text-inherit">{item.title}</span>
             </Link>
           </SidebarMenuButton>
         </SidebarMenuItem>

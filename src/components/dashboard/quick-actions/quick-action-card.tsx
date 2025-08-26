@@ -14,6 +14,62 @@ export default function QuickActionCard({ action }: QuickActionCardProps) {
     router.push(action.actionUrl);
   };
 
+  const getDarkModeColors = () => {
+    switch (action.color) {
+      case "text-blue-600":
+        return {
+          bg: "dark:bg-blue-950/30",
+          hover: "dark:hover:bg-blue-950/50",
+          iconBg: "dark:bg-blue-950/50",
+          iconHover: "dark:group-hover:bg-blue-950/70",
+        };
+      case "text-green-600":
+        return {
+          bg: "dark:bg-green-950/30",
+          hover: "dark:hover:bg-green-950/50",
+          iconBg: "dark:bg-green-950/50",
+          iconHover: "dark:group-hover:bg-green-950/70",
+        };
+      case "text-purple-600":
+        return {
+          bg: "dark:bg-purple-950/30",
+          hover: "dark:hover:bg-purple-950/50",
+          iconBg: "dark:bg-purple-950/50",
+          iconHover: "dark:group-hover:bg-purple-950/70",
+        };
+      case "text-orange-600":
+        return {
+          bg: "dark:bg-orange-950/30",
+          hover: "dark:hover:bg-orange-950/50",
+          iconBg: "dark:bg-orange-950/50",
+          iconHover: "dark:group-hover:bg-orange-950/70",
+        };
+      case "text-gray-600":
+        return {
+          bg: "dark:bg-gray-800",
+          hover: "dark:hover:bg-gray-700",
+          iconBg: "dark:bg-gray-700",
+          iconHover: "dark:group-hover:bg-gray-600",
+        };
+      case "text-indigo-600":
+        return {
+          bg: "dark:bg-indigo-950/30",
+          hover: "dark:hover:bg-indigo-950/50",
+          iconBg: "dark:bg-indigo-950/50",
+          iconHover: "dark:group-hover:bg-indigo-950/70",
+        };
+      default:
+        return {
+          bg: "dark:bg-gray-800",
+          hover: "dark:hover:bg-gray-700",
+          iconBg: "dark:bg-gray-700",
+          iconHover: "dark:group-hover:bg-gray-600",
+        };
+    }
+  };
+
+  const darkColors = getDarkModeColors();
+
   const renderIcon = () => {
     switch (action.icon) {
       case "Plus":
@@ -42,13 +98,15 @@ export default function QuickActionCard({ action }: QuickActionCardProps) {
       className={`
         group w-full h-auto p-6 rounded-lg border transition-all duration-200
         hover:shadow-md hover:border-primary/20 hover:bg-primary/5
-        ${action.bgColor} hover:bg-white dark:hover:bg-gray-800
+        bg-white ${darkColors.bg} dark:border-none
+        hover:bg-gray-50 ${darkColors.hover}
       `}
     >
       <div className="flex flex-col items-center space-y-3 text-center">
         <div
           className={`
-          p-3 rounded-full bg-white dark:bg-gray-800 shadow-sm
+          p-3 rounded-full bg-gray-50 ${darkColors.iconBg} shadow-sm
+          group-hover:bg-gray-100 ${darkColors.iconHover}
           group-hover:shadow-md transition-all duration-200
         `}
         >
