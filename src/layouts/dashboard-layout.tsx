@@ -15,11 +15,13 @@ export default async function DashboardLayout({
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <SidebarProvider defaultOpen={isSidebarOpen}>
-        <div className="flex h-screen w-screen">
+        <div className="flex h-screen w-full overflow-hidden">
           <AppSidebar />
-          <div className="flex flex-col flex-1 px-4 py-2.5">
+          <div className="flex flex-col flex-1 min-w-0 py-2.5 px-4">
             <AppNavbar />
-            <main className="flex-1 py-6 overflow-auto">{children}</main>
+            <main className="flex-1 overflow-y-auto overflow-x-hidden">
+              <div className="container mx-auto py-4">{children}</div>
+            </main>
           </div>
         </div>
       </SidebarProvider>
