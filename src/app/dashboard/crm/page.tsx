@@ -2,6 +2,7 @@ import CrmStatisticsGrid from "@/components/dashboard/crm/crm-statistics-grid";
 import LeadPipeline from "@/components/dashboard/crm/lead-pipeline";
 import RecentLeads from "@/components/dashboard/crm/recent-leads";
 import DealStages from "@/components/dashboard/crm/deal-stages";
+import LeadManagement from "@/components/dashboard/crm/lead-management";
 
 export default function DashboardCrmPage() {
   return (
@@ -14,6 +15,9 @@ export default function DashboardCrmPage() {
       </div>
 
       <RecentLeads />
+
+      {/* Yeni Lead Management Bölümü */}
+      <LeadManagement />
     </div>
   );
 }
