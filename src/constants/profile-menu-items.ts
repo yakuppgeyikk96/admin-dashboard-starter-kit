@@ -17,9 +17,4 @@ export const profileMenuItems: NavigationItem[] = [
     href: "/settings",
     icon: SettingsIcon,
   },
-  {
-    name: "Log out",
-    href: "/logout",
-    icon: LogOutIcon,
-  },
 ];

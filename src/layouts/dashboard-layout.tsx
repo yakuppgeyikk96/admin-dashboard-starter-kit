@@ -3,6 +3,7 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import AppNavbar from "@/components/app-navbar";
 import { ThemeProvider } from "@/providers/theme-provider";
+import { AuthProvider } from "@/contexts/auth-context";
 
 export default async function DashboardLayout({
   children,
@@ -13,18 +14,25 @@ export default async function DashboardLayout({
   const isSidebarOpen = cookieStore.get("sidebar_state")?.value === "true";
 
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      <SidebarProvider defaultOpen={isSidebarOpen}>
-        <div className="flex h-screen w-full overflow-hidden">
-          <AppSidebar />
-          <div className="flex flex-col flex-1 min-w-0 py-2.5 px-4">
-            <AppNavbar />
-            <main className="flex-1 overflow-y-auto overflow-x-hidden">
-              <div className="max-w-screen mx-auto py-4">{children}</div>
-            </main>
+    <AuthProvider>
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <SidebarProvider defaultOpen={isSidebarOpen}>
+          <div className="flex h-screen w-full overflow-hidden">
+            <AppSidebar />
+            <div className="flex flex-col flex-1 min-w-0 py-2.5 px-4">
+              <AppNavbar />
+              <main className="flex-1 overflow-y-auto overflow-x-hidden">
+                <div className="container mx-auto py-4">{children}</div>
+              </main>
+            </div>
           </div>
-        </div>
-      </SidebarProvider>
-    </ThemeProvider>
+        </SidebarProvider>
+      </ThemeProvider>
+    </AuthProvider>
   );
 }

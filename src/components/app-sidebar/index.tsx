@@ -18,7 +18,7 @@ export function AppSidebar() {
   return (
     <Sidebar collapsible="icon" variant="floating">
       <AppSidebarHeader />
-      <SidebarContent className="bg-card rounded-md">
+      <SidebarContent className="bg-card">
         <Collapsible defaultOpen className="group/collapsible">
           <SidebarGroup>
             <SidebarGroupLabel asChild className="cursor-pointer">

@@ -1,3 +1,5 @@
+"use client";
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
@@ -9,9 +11,17 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { profileMenuItems } from "@/constants/profile-menu-items";
+import { useAuth } from "@/hooks/use-auth";
 import Link from "next/link";
+import { LogOut } from "lucide-react";
 
 export default function ProfileMenu() {
+  const { logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+  };
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -33,6 +43,11 @@ export default function ProfileMenu() {
             </DropdownMenuItem>
           ))}
         </DropdownMenuGroup>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem onClick={handleLogout}>
+          <LogOut className="w-4 h-4 text-red-600" />
+          <span className="text-red-600">Logout</span>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

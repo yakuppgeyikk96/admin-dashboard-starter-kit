@@ -5,8 +5,19 @@ export enum Role {
 
 export interface User {
   id: string;
-  name: string;
   email: string;
-  role: Role;
+  name: string;
+  role: UserRole;
   avatar?: string;
+  createdAt: string;
+  lastLogin?: string;
+}
+
+export type UserRole = "admin" | "user" | "manager";
+
+export interface AuthState {
+  user: User | null;
+  isAuthenticated: boolean;
+  isLoading: boolean;
+  error: string | null;
 }
