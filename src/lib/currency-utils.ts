@@ -1,11 +1,9 @@
-export const formatCurrency = (value: number, currency = "USD") => {
+export function formatCurrency(amount: number): string {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
-    currency,
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  }).format(value);
-};
+    currency: "USD",
+  }).format(amount);
+}
 
 export const formatPercentage = (value: number, decimals = 1) => {
   return new Intl.NumberFormat("en-US", {

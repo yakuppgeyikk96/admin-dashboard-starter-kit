@@ -1,14 +1,7 @@
 import DataTable from "@/components/common/table/data-table";
 import TableCell from "@/components/common/table/table-cell";
 import { Badge } from "@/components/ui/badge";
-
-interface Product {
-  id: number;
-  name: string;
-  itemsSold: number;
-  itemId: string;
-  sales: number;
-}
+import { Product } from "@/types/Product";
 
 interface ProductTableProps {
   products: Product[];
@@ -53,7 +46,7 @@ export default function ProductTable({
         </Badge>
       </TableCell>
       <TableCell align="right" className="font-semibold text-sm sm:text-base">
-        ${product.sales.toLocaleString()}
+        ${product.sales?.toLocaleString()}
       </TableCell>
     </tr>
   );

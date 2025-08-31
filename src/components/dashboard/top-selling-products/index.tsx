@@ -5,7 +5,10 @@ import TimeFilter from "./time-filter";
 import ProductTable from "./product-table";
 import Pagination from "@/components/common/pagination/pagination";
 import { usePagination } from "@/components/common/pagination/use-pagination";
-import { ITEMS_PER_PAGE, PRODUCTS } from "@/constants/top-selling-products";
+import {
+  ITEMS_PER_PAGE,
+  TOP_SELLING_PRODUCTS,
+} from "@/constants/top-selling-products";
 
 export default function TopSellingProducts() {
   const [timeFilter, setTimeFilter] = useState("This Week");
@@ -19,11 +22,11 @@ export default function TopSellingProducts() {
     handlePreviousPage,
     handleNextPage,
   } = usePagination({
-    totalItems: PRODUCTS.length,
+    totalItems: TOP_SELLING_PRODUCTS.length,
     itemsPerPage: ITEMS_PER_PAGE,
   });
 
-  const currentProducts = PRODUCTS.slice(startIndex, endIndex);
+  const currentProducts = TOP_SELLING_PRODUCTS.slice(startIndex, endIndex);
 
   return (
     <div className="bg-card rounded-lg border p-6 flex flex-col h-full">
@@ -47,7 +50,7 @@ export default function TopSellingProducts() {
           totalPages={totalPages}
           startIndex={startIndex}
           endIndex={endIndex}
-          totalItems={PRODUCTS.length}
+          totalItems={TOP_SELLING_PRODUCTS.length}
           onPageChange={handlePageChange}
           onPreviousPage={handlePreviousPage}
           onNextPage={handleNextPage}

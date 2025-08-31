@@ -1,8 +1,27 @@
 export interface Product {
-  id: number;
+  id: string;
   name: string;
+  description: string;
+  price: number;
+  originalPrice?: number;
+  category: string;
+  brand: string;
   image: string;
-  itemsSold: number;
-  itemId: string;
-  sales: number;
+  stock: number;
+  itemId?: string;
+  itemsSold?: number;
+  sales?: number;
+  status: "in-stock" | "low-stock" | "out-of-stock";
+  rating: number;
+  reviews: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface ProductFilters {
+  search: string;
+  category: string;
+  brand: string;
+  priceRange: [number, number];
+  status: string;
 }
