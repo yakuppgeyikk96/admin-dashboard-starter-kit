@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { Montserrat } from "next/font/google";
 import DashboardLayout from "@/layouts/dashboard-layout";
 
-const inter = Inter({
-  variable: "--font-inter",
+import "./globals.css";
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  weight: ["400"],
   subsets: ["latin"],
 });
 
@@ -20,9 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} antialiased bg-gray-100 dark:bg-black`}
-      >
+      <body className={`${montserrat.variable} antialiased dark:bg-background`}>
         <DashboardLayout>{children}</DashboardLayout>
       </body>
     </html>

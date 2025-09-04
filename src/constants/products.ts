@@ -16,6 +16,7 @@ export const PRODUCTS: Product[] = [
     reviews: 128,
     createdAt: "2024-01-15",
     updatedAt: "2024-01-20",
+    color: "black",
   },
   {
     id: "2",
@@ -31,6 +32,7 @@ export const PRODUCTS: Product[] = [
     reviews: 89,
     createdAt: "2024-01-10",
     updatedAt: "2024-01-18",
+    color: "black",
   },
   {
     id: "3",
@@ -46,6 +48,7 @@ export const PRODUCTS: Product[] = [
     reviews: 256,
     createdAt: "2024-01-05",
     updatedAt: "2024-01-22",
+    color: "black",
   },
   {
     id: "4",
@@ -62,6 +65,7 @@ export const PRODUCTS: Product[] = [
     reviews: 156,
     createdAt: "2024-01-12",
     updatedAt: "2024-01-19",
+    color: "black",
   },
   {
     id: "5",
@@ -77,6 +81,7 @@ export const PRODUCTS: Product[] = [
     reviews: 203,
     createdAt: "2024-01-08",
     updatedAt: "2024-01-21",
+    color: "black",
   },
   {
     id: "6",
@@ -92,6 +97,7 @@ export const PRODUCTS: Product[] = [
     reviews: 167,
     createdAt: "2024-01-14",
     updatedAt: "2024-01-20",
+    color: "black",
   },
 ];
 

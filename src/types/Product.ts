@@ -1,3 +1,22 @@
+export type ProductStatus = "in-stock" | "low-stock" | "out-of-stock";
+
+export type ProductColor =
+  | "black"
+  | "white"
+  | "red"
+  | "green"
+  | "blue"
+  | "orange"
+  | "pink"
+  | "purple"
+  | "yellow"
+  | "gray"
+  | "brown"
+  | "cyan"
+  | "lime"
+  | "indigo"
+  | "violet";
+
 export interface Product {
   id: string;
   name: string;
@@ -11,11 +30,12 @@ export interface Product {
   itemId?: string;
   itemsSold?: number;
   sales?: number;
-  status: "in-stock" | "low-stock" | "out-of-stock";
+  status: ProductStatus;
   rating: number;
   reviews: number;
   createdAt: string;
   updatedAt: string;
+  color: ProductColor;
 }
 
 export interface ProductFilters {

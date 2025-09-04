@@ -22,6 +22,7 @@ export const TOP_SELLING_PRODUCTS: Product[] = [
     reviews: 128,
     createdAt: "2024-01-15",
     updatedAt: "2024-01-20",
+    color: "black",
   },
   {
     id: "2",
@@ -40,6 +41,7 @@ export const TOP_SELLING_PRODUCTS: Product[] = [
     reviews: 89,
     createdAt: "2024-01-10",
     updatedAt: "2024-01-18",
+    color: "black",
   },
   {
     id: "3",
@@ -58,6 +60,7 @@ export const TOP_SELLING_PRODUCTS: Product[] = [
     reviews: 156,
     createdAt: "2024-01-05",
     updatedAt: "2024-01-22",
+    color: "black",
   },
   {
     id: "4",
@@ -76,6 +79,7 @@ export const TOP_SELLING_PRODUCTS: Product[] = [
     reviews: 203,
     createdAt: "2024-01-12",
     updatedAt: "2024-01-19",
+    color: "black",
   },
   {
     id: "5",
@@ -94,6 +98,7 @@ export const TOP_SELLING_PRODUCTS: Product[] = [
     reviews: 167,
     createdAt: "2024-01-14",
     updatedAt: "2024-01-20",
+    color: "black",
   },
   {
     id: "6",
@@ -112,6 +117,7 @@ export const TOP_SELLING_PRODUCTS: Product[] = [
     reviews: 134,
     createdAt: "2024-01-08",
     updatedAt: "2024-01-21",
+    color: "black",
   },
   {
     id: "7",
@@ -130,6 +136,7 @@ export const TOP_SELLING_PRODUCTS: Product[] = [
     reviews: 189,
     createdAt: "2024-01-11",
     updatedAt: "2024-01-17",
+    color: "black",
   },
   {
     id: "8",
@@ -148,6 +155,7 @@ export const TOP_SELLING_PRODUCTS: Product[] = [
     reviews: 112,
     createdAt: "2024-01-13",
     updatedAt: "2024-01-20",
+    color: "black",
   },
   {
     id: "9",
@@ -166,6 +174,7 @@ export const TOP_SELLING_PRODUCTS: Product[] = [
     reviews: 98,
     createdAt: "2024-01-09",
     updatedAt: "2024-01-18",
+    color: "black",
   },
   {
     id: "10",
@@ -184,5 +193,6 @@ export const TOP_SELLING_PRODUCTS: Product[] = [
     reviews: 145,
     createdAt: "2024-01-16",
     updatedAt: "2024-01-21",
+    color: "black",
   },
 ];

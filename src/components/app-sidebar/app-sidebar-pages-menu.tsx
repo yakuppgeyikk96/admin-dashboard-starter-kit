@@ -1,28 +1,16 @@
 "use client";
 
-import Link from "next/link";
-import { SidebarMenu, SidebarMenuButton } from "../ui/sidebar";
+import { SidebarMenu } from "../ui/sidebar";
 import { SidebarMenuItem } from "../ui/sidebar";
-import { usePathname } from "next/navigation";
 import { pagesSidebarItems } from "@/constants/sidebar-items";
+import AppSidebarMenuButton from "./app-sidebar-menu-button";
 
 export default function AppSidebarPagesMenu() {
-  const pathname = usePathname();
-
-  const isActive = (url: string) => {
-    return pathname === url;
-  };
-
   return (
     <SidebarMenu>
       {pagesSidebarItems.map((item) => (
         <SidebarMenuItem key={item.title}>
-          <SidebarMenuButton asChild isActive={isActive(item.url)}>
-            <Link href={item.url}>
-              <item.icon />
-              <span>{item.title}</span>
-            </Link>
-          </SidebarMenuButton>
+          <AppSidebarMenuButton item={item} />
         </SidebarMenuItem>
       ))}
     </SidebarMenu>
