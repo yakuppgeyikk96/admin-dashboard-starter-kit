@@ -1,4 +1,4 @@
-import { ORDER_STATUS_CONFIG } from "@/constants/recent-orders";
+import { ORDER_STATUS_CONFIG } from "@/shared/constants/recent-orders";
 
 interface OrderStatusBadgeProps {
   status: string;

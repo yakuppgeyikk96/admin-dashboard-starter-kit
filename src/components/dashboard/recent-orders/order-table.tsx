@@ -1,7 +1,7 @@
-import DataTable from "@/components/common/table/data-table";
-import TableCell from "@/components/common/table/table-cell";
+import DataTable from "@/shared/components/common/table/data-table";
+import TableCell from "@/shared/components/common/table/table-cell";
 import OrderStatusBadge from "./order-status-badge";
-import { Order } from "@/types/Order";
+import { Order } from "@/shared/types/Order";
 
 interface OrderTableProps {
   orders: Order[];

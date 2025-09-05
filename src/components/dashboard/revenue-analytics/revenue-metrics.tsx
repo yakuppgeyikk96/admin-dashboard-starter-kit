@@ -1,5 +1,5 @@
 import { TrendingUp, TrendingDown } from "lucide-react";
-import { REVENUE_METRICS } from "@/constants/revenue-analytics";
+import { REVENUE_METRICS } from "@/shared/constants/revenue-analytics";
 
 export default function RevenueMetrics() {
   const isPositiveGrowth = REVENUE_METRICS.growthPercentage >= 0;

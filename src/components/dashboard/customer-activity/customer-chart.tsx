@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-import { CUSTOMER_ACTIVITY_DATA } from "@/constants/customer-activity";
+import { CUSTOMER_ACTIVITY_DATA } from "@/shared/constants/customer-activity";
 
 export default function CustomerChart() {
   return (

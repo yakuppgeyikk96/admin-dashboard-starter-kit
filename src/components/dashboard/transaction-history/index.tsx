@@ -1,14 +1,23 @@
 "use client";
 
 import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/shared/components/ui/card";
+import { Badge } from "@/shared/components/ui/badge";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/shared/components/ui/avatar";
 import {
   TRANSACTIONS,
   TRANSACTION_STATUS_CONFIG,
-} from "@/constants/transaction-history";
-import { Transaction } from "@/types/Transaction";
+} from "@/shared/constants/transaction-history";
+import { Transaction } from "@/shared/types/Transaction";
 
 export default function TransactionHistory() {
   const [timeFilter, setTimeFilter] = useState("All Time");

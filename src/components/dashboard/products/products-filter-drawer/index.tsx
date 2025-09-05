@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/shared/components/ui/button";
 import {
   Drawer,
   DrawerContent,
@@ -6,7 +6,7 @@ import {
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer";
+} from "@/shared/components/ui/drawer";
 import { CheckIcon, FilterIcon } from "lucide-react";
 import ProductsFilters from "../products-filter";
 

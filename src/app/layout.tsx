@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import DashboardLayout from "@/layouts/dashboard-layout";
+import DashboardLayout from "@/shared/components/layouts/DashboardLayout";
 
 import "./globals.css";
 

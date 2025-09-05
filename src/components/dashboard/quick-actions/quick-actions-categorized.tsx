@@ -1,5 +1,5 @@
 import QuickActionCard from "./quick-action-card";
-import { QUICK_ACTION_CATEGORIES } from "@/constants/quick-actions";
+import { QUICK_ACTION_CATEGORIES } from "@/shared/constants/quick-actions";
 
 export default function QuickActionsCategorized() {
   return (

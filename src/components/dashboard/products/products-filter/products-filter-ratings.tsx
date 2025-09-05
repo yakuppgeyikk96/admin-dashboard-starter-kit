@@ -1,9 +1,9 @@
 "use client";
 
-import { PRODUCT_FILTERS_RATINGS } from "@/constants/product-filters";
-import { Checkbox } from "@/components/ui/checkbox";
+import { PRODUCT_FILTERS_RATINGS } from "@/shared/constants/product-filters";
+import { Checkbox } from "@/shared/components/ui/checkbox";
 import { Star } from "lucide-react";
-import { useFilterSelection } from "@/hooks/use-filter-selection";
+import { useFilterSelection } from "@/shared/hooks/use-filter-selection";
 
 export default function ProductsFilterRatings() {
   const { selectedItems, handleItemChange } = useFilterSelection({

@@ -1,5 +1,5 @@
 import { Users, UserPlus, TrendingUp, Globe } from "lucide-react";
-import { CUSTOMER_METRICS } from "@/constants/customer-activity";
+import { CUSTOMER_METRICS } from "@/shared/constants/customer-activity";
 
 export default function CustomerMetrics() {
   return (

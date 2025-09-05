@@ -3,9 +3,12 @@
 import { useState } from "react";
 import TimeFilter from "./time-filter";
 import OrderTable from "./order-table";
-import Pagination from "@/components/common/pagination/pagination";
-import { usePagination } from "@/components/common/pagination/use-pagination";
-import { ITEMS_PER_PAGE, RECENT_ORDERS } from "@/constants/recent-orders";
+import Pagination from "@/shared/components/common/pagination/pagination";
+import { usePagination } from "@/shared/components/common/pagination/use-pagination";
+import {
+  ITEMS_PER_PAGE,
+  RECENT_ORDERS,
+} from "@/shared/constants/recent-orders";
 
 export default function RecentOrders() {
   const [timeFilter, setTimeFilter] = useState("This Week");

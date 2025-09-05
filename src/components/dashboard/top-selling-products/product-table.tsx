@@ -1,7 +1,7 @@
-import DataTable from "@/components/common/table/data-table";
-import TableCell from "@/components/common/table/table-cell";
-import { Badge } from "@/components/ui/badge";
-import { Product } from "@/types/Product";
+import DataTable from "@/shared/components/common/table/data-table";
+import TableCell from "@/shared/components/common/table/table-cell";
+import { Badge } from "@/shared/components/ui/badge";
+import { Product } from "@/shared/types/Product";
 
 interface ProductTableProps {
   products: Product[];

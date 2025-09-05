@@ -9,7 +9,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import { REVENUE_DATA } from "@/constants/revenue-analytics";
+import { REVENUE_DATA } from "@/shared/constants/revenue-analytics";
 
 export default function RevenueChart() {
   return (

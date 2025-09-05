@@ -1,4 +1,4 @@
-import { PRODUCTS } from "@/constants/products";
+import { PRODUCTS } from "@/shared/constants/products";
 import { ProductCard } from "./product-card";
 
 export function ProductsList() {

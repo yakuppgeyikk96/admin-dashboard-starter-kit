@@ -6,8 +6,8 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { TIME_FILTERS } from "@/constants/top-selling-products";
+} from "@/shared/components/ui/dropdown-menu";
+import { TIME_FILTERS } from "@/shared/constants/top-selling-products";
 
 interface TimeFilterProps {
   timeFilter: string;

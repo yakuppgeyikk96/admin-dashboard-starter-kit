@@ -1,4 +1,4 @@
-import { GEOGRAPHIC_DATA } from "@/constants/customer-activity";
+import { GEOGRAPHIC_DATA } from "@/shared/constants/customer-activity";
 
 export default function GeographicDistribution() {
   return (

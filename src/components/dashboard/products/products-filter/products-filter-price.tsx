@@ -1,9 +1,9 @@
 "use client";
 
-import { Slider } from "@/components/ui/slider";
+import { Slider } from "@/shared/components/ui/slider";
 import { useState } from "react";
-import { formatCurrency } from "@/lib/currency-utils";
-import { useDebounce } from "@/hooks/use-debounce";
+import { formatCurrency } from "@/shared/lib/currency-utils";
+import { useDebounce } from "@/shared/hooks/use-debounce";
 
 export default function ProductsFilterPrice() {
   const [priceRange, setPriceRange] = useState([2500, 7500]);

@@ -1,9 +1,9 @@
 "use client";
 
-import { PRODUCT_FILTERS_ITEMS_FOR } from "@/constants/product-filters";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "@/components/ui/label";
-import { useFilterSelection } from "@/hooks/use-filter-selection";
+import { PRODUCT_FILTERS_ITEMS_FOR } from "@/shared/constants/product-filters";
+import { Checkbox } from "@/shared/components/ui/checkbox";
+import { Label } from "@/shared/components/ui/label";
+import { useFilterSelection } from "@/shared/hooks/use-filter-selection";
 
 export default function ProductsFilterItemsFor() {
   const { selectedItems, handleItemChange } = useFilterSelection({

@@ -1,8 +1,8 @@
-import CrmStatisticsGrid from "@/components/dashboard/crm/crm-statistics-grid";
-import LeadPipeline from "@/components/dashboard/crm/lead-pipeline";
-import RecentLeads from "@/components/dashboard/crm/recent-leads";
-import DealStages from "@/components/dashboard/crm/deal-stages";
-import LeadManagement from "@/components/dashboard/crm/lead-management";
+import CrmStatisticsGrid from "@/features/dashboard/crm/components/CrmStatisticsGrid";
+import LeadPipeline from "@/features/dashboard/crm/components/LeadPipeline";
+import RecentLeads from "@/features/dashboard/crm/components/RecentLeads";
+import DealStages from "@/features/dashboard/crm/components/DealStages";
+import LeadManagement from "@/features/dashboard/crm/components/LeadManagement";
 
 export default function DashboardCrmPage() {
   return (
@@ -16,7 +16,6 @@ export default function DashboardCrmPage() {
 
       <RecentLeads />
 
-      {/* Yeni Lead Management Bölümü */}
       <LeadManagement />
     </div>
   );

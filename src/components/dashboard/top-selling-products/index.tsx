@@ -3,12 +3,12 @@
 import { useState } from "react";
 import TimeFilter from "./time-filter";
 import ProductTable from "./product-table";
-import Pagination from "@/components/common/pagination/pagination";
-import { usePagination } from "@/components/common/pagination/use-pagination";
+import Pagination from "@/shared/components/common/pagination/pagination";
+import { usePagination } from "@/shared/components/common/pagination/use-pagination";
 import {
   ITEMS_PER_PAGE,
   TOP_SELLING_PRODUCTS,
-} from "@/constants/top-selling-products";
+} from "@/shared/constants/top-selling-products";
 
 export default function TopSellingProducts() {
   const [timeFilter, setTimeFilter] = useState("This Week");

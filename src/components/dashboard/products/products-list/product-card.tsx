@@ -1,12 +1,12 @@
-import { Product } from "@/types/Product";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Product } from "@/shared/types/Product";
+import { Card, CardContent, CardHeader } from "@/shared/components/ui/card";
+import { Badge } from "@/shared/components/ui/badge";
+import { Button } from "@/shared/components/ui/button";
 import { Star, ShoppingCart } from "lucide-react";
 import {
   getProductStatusColor,
   getProductStatusText,
-} from "@/utils/product-utils";
+} from "@/shared/utils/product-utils";
 import Image from "next/image";
 
 interface ProductCardProps {

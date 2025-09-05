@@ -1,5 +1,5 @@
-import { QuickAction } from "@/types/QuickAction";
-import { Button } from "@/components/ui/button";
+import { QuickAction } from "@/shared/types/QuickAction";
+import { Button } from "@/shared/components/ui/button";
 import { useRouter } from "next/navigation";
 import * as LucideIcons from "lucide-react";
 

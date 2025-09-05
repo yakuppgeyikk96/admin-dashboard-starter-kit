@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/shared/components/ui/button";
 import { Grid3X3, List } from "lucide-react";
 
 interface ViewModeToggleProps {

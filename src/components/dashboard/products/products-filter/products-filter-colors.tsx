@@ -1,7 +1,7 @@
 "use client";
 
-import { PRODUCT_FILTERS_COLORS } from "@/constants/product-filters";
-import { ProductColor } from "@/types/Product";
+import { PRODUCT_FILTERS_COLORS } from "@/shared/constants/product-filters";
+import { ProductColor } from "@/shared/types/Product";
 import { Check } from "lucide-react";
 import { useRef, useState } from "react";
 

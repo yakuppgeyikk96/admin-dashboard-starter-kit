@@ -1,5 +1,5 @@
 import QuickActionCard from "./quick-action-card";
-import { QUICK_ACTIONS } from "@/constants/quick-actions";
+import { QUICK_ACTIONS } from "@/shared/constants/quick-actions";
 
 export default function QuickActionsGrid() {
   return (
