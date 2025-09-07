@@ -1,5 +1,4 @@
 import { useProductsFilter } from "@/features/ecommerce/hooks/useProductsFilter";
-import { useState } from "react";
 
 interface FilterItem {
   value: string;

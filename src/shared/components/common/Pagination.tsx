@@ -1,5 +1,4 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { usePagination } from "./use-pagination";
 
 interface PaginationProps {
   currentPage: number;
@@ -13,7 +12,7 @@ interface PaginationProps {
   className?: string;
 }
 
-function Pagination({
+export function Pagination({
   currentPage,
   totalPages,
   startIndex,
@@ -68,5 +67,3 @@ function Pagination({
     </div>
   );
 }
-
-export { usePagination, Pagination };

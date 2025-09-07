@@ -9,10 +9,8 @@ import {
 } from "@/shared/components/ui/card";
 import OrderTimeFilter from "@/shared/components/orders/OrderTimeFilter";
 import OrderTable from "@/shared/components/orders/OrderTable";
-import {
-  Pagination,
-  usePagination,
-} from "@/shared/components/common/Pagination";
+import { Pagination } from "@/shared/components/common/Pagination";
+import { usePagination } from "@/shared/hooks/use-pagination";
 import {
   ITEMS_PER_PAGE,
   RECENT_ORDERS,

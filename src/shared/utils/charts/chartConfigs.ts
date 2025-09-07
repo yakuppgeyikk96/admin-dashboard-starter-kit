@@ -48,7 +48,7 @@ export const SALES_CHART_CONFIG = {
   ],
   height: 400,
   yAxisFormatter: (value: number) => `$${value}`,
-  tooltipFormatter: (value: number, name: string): [string, string] => [
+  tooltipFormatter: (value: number): [string, string] => [
     `$${value.toLocaleString()}`,
     "Sales",
   ],

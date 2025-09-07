@@ -3,10 +3,8 @@
 import { useState } from "react";
 import TopSellingProductsTimeFilter from "./TopSellingProductsTimeFilter";
 import TopSellingProductsTable from "./TopSellingProductsTable";
-import {
-  Pagination,
-  usePagination,
-} from "@/shared/components/common/Pagination";
+import { Pagination } from "@/shared/components/common/Pagination";
+import { usePagination } from "@/shared/hooks/use-pagination";
 import {
   ITEMS_PER_PAGE,
   TOP_SELLING_PRODUCTS,
