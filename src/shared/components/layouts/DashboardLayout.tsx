@@ -2,7 +2,7 @@ import { cookies } from "next/headers";
 import Sidebar from "@/shared/components/layouts/Sidebar";
 import { SidebarProvider } from "@/shared/components/ui/sidebar";
 import Navbar from "@/shared/components/layouts/Navbar";
-import { ThemeProvider } from "@/providers/theme-provider";
+import { ThemeProvider } from "@/providers/ThemeProvider";
 import { AuthProvider } from "@/contexts/auth-context";
 
 export default async function DashboardLayout({

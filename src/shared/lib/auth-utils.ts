@@ -1,5 +1,5 @@
-import { MOCK_USERS } from "@/shared/constants/mock-users";
-import { User } from "@/shared/types/User";
+import { MOCK_USERS } from "@/shared/constants/mockUsers";
+import { User } from "@/shared/types";
 
 export const mockLogin = async (
   email: string,

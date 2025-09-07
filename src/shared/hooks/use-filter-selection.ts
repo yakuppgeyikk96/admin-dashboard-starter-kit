@@ -1,3 +1,4 @@
+import { useProductsFilter } from "@/features/ecommerce/hooks/useProductsFilter";
 import { useState } from "react";
 
 interface FilterItem {
@@ -7,16 +8,16 @@ interface FilterItem {
 
 interface UseFilterSelectionProps {
   items: FilterItem[];
-  defaultSelected?: string[];
-  onSelectionChange?: (selectedItems: string[]) => void;
+  filterKey: "categories" | "brands" | "colors" | "ratings" | "itemsFor";
 }
 
 export function useFilterSelection({
   items,
-  defaultSelected = ["all"],
-  onSelectionChange,
+  filterKey,
 }: UseFilterSelectionProps) {
-  const [selectedItems, setSelectedItems] = useState<string[]>(defaultSelected);
+  const { filters, setFilter } = useProductsFilter();
+
+  const selectedItems = filters[filterKey] as string[];
 
   const handleItemChange = (value: string, checked: boolean) => {
     let newSelection: string[];
@@ -43,8 +44,7 @@ export function useFilterSelection({
       }
     }
 
-    setSelectedItems(newSelection);
-    onSelectionChange?.(newSelection);
+    setFilter(filterKey, newSelection);
   };
 
   return {

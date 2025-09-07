@@ -2,7 +2,7 @@
 
 import { SidebarMenu } from "@/shared/components/ui/sidebar";
 import { SidebarMenuItem } from "@/shared/components/ui/sidebar";
-import { pagesSidebarItems } from "@/shared/constants/sidebar-items";
+import { pagesSidebarItems } from "@/shared/constants/sidebarItems";
 import AppSidebarMenuButton from "./SidebarMenuButton";
 
 export default function SidebarPagesMenu() {

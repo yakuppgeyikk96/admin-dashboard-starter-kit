@@ -1,11 +1,11 @@
-import EcommStatisticsGrid from "@/components/dashboard/statistics/ecomm-statistics-grid";
-import SalesChartSection from "@/components/dashboard/sales-chart-section";
-import TopSellingProducts from "@/components/dashboard/top-selling-products";
-import RecentOrders from "@/components/dashboard/recent-orders";
-import RevenueAnalytics from "@/components/dashboard/revenue-analytics";
-import CustomerActivity from "@/components/dashboard/customer-activity";
-import QuickActions from "@/components/dashboard/quick-actions";
-import TransactionHistory from "@/components/dashboard/transaction-history";
+import EcommStatisticsGrid from "@/features/ecommerce/components/EcommerceStatisticsGrid";
+import EcommerceSalesChart from "@/features/ecommerce/components/EcommerceSalesChart";
+import TopSellingProducts from "@/features/ecommerce/components/TopSellingProducts";
+import RecentOrders from "@/features/ecommerce/components/RecentOrders";
+import RevenueAnalytics from "@/features/analytics/components/RevenueAnalytics";
+import CustomerActivity from "@/features/analytics/components/CustomerActivity";
+import QuickActions from "@/features/common/components/QuickActions";
+import TransactionHistory from "@/features/ecommerce/components/TransactionHistory";
 
 export default function EcommercePage() {
   return (
@@ -15,7 +15,7 @@ export default function EcommercePage() {
       <QuickActions />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <SalesChartSection />
+        <EcommerceSalesChart />
         <RevenueAnalytics />
       </div>
 

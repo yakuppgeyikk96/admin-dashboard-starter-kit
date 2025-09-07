@@ -2,7 +2,7 @@
 
 import { SidebarMenu } from "@/shared/components/ui/sidebar";
 import { SidebarMenuItem } from "@/shared/components/ui/sidebar";
-import { dashboardSidebarItems } from "@/shared/constants/sidebar-items";
+import { dashboardSidebarItems } from "@/shared/constants/sidebarItems";
 import SidebarMenuButton from "./SidebarMenuButton";
 
 export default function SidebarDashboardMenu() {

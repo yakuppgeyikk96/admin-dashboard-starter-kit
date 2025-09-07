@@ -2,8 +2,8 @@
 
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { MOCK_USERS } from "@/shared/constants/mock-users";
-import { User } from "@/shared/types/User";
+import { MOCK_USERS } from "@/shared/constants/mockUsers";
+import { User } from "@/shared/types";
 
 export async function loginAction(formData: FormData) {
   const email = formData.get("email") as string;

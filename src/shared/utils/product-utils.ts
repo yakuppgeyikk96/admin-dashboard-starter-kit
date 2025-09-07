@@ -1,4 +1,4 @@
-import { ProductStatus } from "@/shared/types/Product";
+import { ProductStatus } from "@/features/ecommerce/types";
 
 export const getProductStatusColor = (status: ProductStatus) => {
   switch (status) {

@@ -14,7 +14,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/shared/components/ui/dropdown-menu";
-import { profileMenuItems } from "@/shared/constants/profile-menu-items";
+import { profileMenuItems } from "@/shared/constants/profileMenuItems";
 import { useAuth } from "@/shared/hooks/use-auth";
 import Link from "next/link";
 import { LogOut } from "lucide-react";

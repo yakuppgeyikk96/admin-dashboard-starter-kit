@@ -1,8 +1,8 @@
-import CrmStatisticsGrid from "@/features/dashboard/crm/components/CrmStatisticsGrid";
-import LeadPipeline from "@/features/dashboard/crm/components/LeadPipeline";
-import RecentLeads from "@/features/dashboard/crm/components/RecentLeads";
-import DealStages from "@/features/dashboard/crm/components/DealStages";
-import LeadManagement from "@/features/dashboard/crm/components/LeadManagement";
+import CrmStatisticsGrid from "@/features/crm/components/CrmStatisticsGrid";
+import LeadPipeline from "@/features/crm/components/LeadPipeline";
+import RecentLeads from "@/features/crm/components/RecentLeads";
+import DealStages from "@/features/crm/components/DealStages";
+import LeadManagement from "@/features/crm/components/LeadManagement";
 
 export default function DashboardCrmPage() {
   return (
