@@ -1,4 +1,9 @@
-import { Product } from "@/features/ecommerce/types";
+import {
+  ProductCategory,
+  ProductColor,
+  ProductItemsFor,
+  type Product,
+} from "@/features/ecommerce/types";
 
 export const PRODUCTS: Product[] = [
   {
@@ -7,7 +12,7 @@ export const PRODUCTS: Product[] = [
     description: "High-quality wireless headphones with noise cancellation",
     price: 129.99,
     originalPrice: 159.99,
-    category: "Electronics",
+    category: ProductCategory.ELECTRONICS,
     brand: "AudioTech",
     image: "/images/products/wireless-headphone.jpg",
     stock: 45,
@@ -16,15 +21,15 @@ export const PRODUCTS: Product[] = [
     reviews: 128,
     createdAt: "2024-01-15",
     updatedAt: "2024-01-20",
-    color: "black",
-    itemsFor: "unisex", // Yeni field eklendi
+    color: ProductColor.BLACK,
+    itemsFor: ProductItemsFor.UNISEX,
   },
   {
     id: "2",
     name: "Smart Fitness Watch",
     description: "Track your health and fitness goals",
     price: 199.99,
-    category: "Wearables",
+    category: ProductCategory.WEARABLES,
     brand: "FitTech",
     image: "/images/products/smart-fitness-watch.jpg",
     stock: 12,
@@ -33,15 +38,15 @@ export const PRODUCTS: Product[] = [
     reviews: 89,
     createdAt: "2024-01-10",
     updatedAt: "2024-01-18",
-    color: "black",
-    itemsFor: "unisex",
+    color: ProductColor.BLACK,
+    itemsFor: ProductItemsFor.UNISEX,
   },
   {
     id: "3",
     name: "Organic Cotton T-Shirt",
     description: "Comfortable and eco-friendly cotton t-shirt",
     price: 29.99,
-    category: "Clothing",
+    category: ProductCategory.CLOTHING,
     brand: "EcoWear",
     image: "/images/products/organic-cotton-t-shirt.jpg",
     stock: 0,
@@ -50,8 +55,8 @@ export const PRODUCTS: Product[] = [
     reviews: 256,
     createdAt: "2024-01-05",
     updatedAt: "2024-01-22",
-    color: "white",
-    itemsFor: "unisex",
+    color: ProductColor.WHITE,
+    itemsFor: ProductItemsFor.UNISEX,
   },
   {
     id: "4",
@@ -59,7 +64,7 @@ export const PRODUCTS: Product[] = [
     description: "10000mAh portable charger for all devices",
     price: 49.99,
     originalPrice: 69.99,
-    category: "Electronics",
+    category: ProductCategory.ELECTRONICS,
     brand: "PowerTech",
     image: "/images/products/portable-power-bank.jpg",
     stock: 78,
@@ -68,15 +73,15 @@ export const PRODUCTS: Product[] = [
     reviews: 156,
     createdAt: "2024-01-12",
     updatedAt: "2024-01-19",
-    color: "black",
-    itemsFor: "unisex",
+    color: ProductColor.BLACK,
+    itemsFor: ProductItemsFor.UNISEX,
   },
   {
     id: "5",
     name: "Stainless Steel Water Bottle",
     description: "Insulated water bottle keeps drinks cold for 24 hours",
     price: 34.99,
-    category: "Home & Garden",
+    category: ProductCategory.HOME_AND_GARDEN,
     brand: "HydroLife",
     image: "/images/products/stainless-steel-water-bottle.jpg",
     stock: 23,
@@ -85,15 +90,15 @@ export const PRODUCTS: Product[] = [
     reviews: 203,
     createdAt: "2024-01-08",
     updatedAt: "2024-01-21",
-    color: "blue",
-    itemsFor: "unisex",
+    color: ProductColor.BLUE,
+    itemsFor: ProductItemsFor.UNISEX,
   },
   {
     id: "6",
     name: "Wireless Gaming Mouse",
     description: "High-precision gaming mouse with RGB lighting",
     price: 79.99,
-    category: "Electronics",
+    category: ProductCategory.ELECTRONICS,
     brand: "GameTech",
     image: "/images/products/wireless-gaming-mouse.jpg",
     stock: 34,
@@ -102,15 +107,15 @@ export const PRODUCTS: Product[] = [
     reviews: 167,
     createdAt: "2024-01-14",
     updatedAt: "2024-01-20",
-    color: "black",
-    itemsFor: "unisex",
+    color: ProductColor.BLACK,
+    itemsFor: ProductItemsFor.UNISEX,
   },
   {
     id: "7",
     name: "Women's Running Shoes",
     description: "Comfortable running shoes for women",
     price: 89.99,
-    category: "Clothing",
+    category: ProductCategory.CLOTHING,
     brand: "SportMax",
     image: "/images/products/women-running-shoes.jpg",
     stock: 15,
@@ -119,8 +124,8 @@ export const PRODUCTS: Product[] = [
     reviews: 312,
     createdAt: "2024-01-16",
     updatedAt: "2024-01-23",
-    color: "pink",
-    itemsFor: "women",
+    color: ProductColor.PINK,
+    itemsFor: ProductItemsFor.WOMEN,
   },
   {
     id: "8",
@@ -128,7 +133,7 @@ export const PRODUCTS: Product[] = [
     description: "Classic leather jacket for men",
     price: 199.99,
     originalPrice: 249.99,
-    category: "Clothing",
+    category: ProductCategory.CLOTHING,
     brand: "LeatherCraft",
     image: "/images/products/men-leather-jacket.jpg",
     stock: 8,
@@ -137,15 +142,15 @@ export const PRODUCTS: Product[] = [
     reviews: 189,
     createdAt: "2024-01-11",
     updatedAt: "2024-01-19",
-    color: "brown",
-    itemsFor: "men",
+    color: ProductColor.BROWN,
+    itemsFor: ProductItemsFor.MEN,
   },
   {
     id: "9",
     name: "Kids' Backpack",
     description: "Colorful backpack for kids",
     price: 39.99,
-    category: "Clothing",
+    category: ProductCategory.CLOTHING,
     brand: "KidStuff",
     image: "/images/products/kids-backpack.jpg",
     stock: 25,
@@ -154,20 +159,9 @@ export const PRODUCTS: Product[] = [
     reviews: 145,
     createdAt: "2024-01-13",
     updatedAt: "2024-01-21",
-    color: "blue",
-    itemsFor: "kids",
+    color: ProductColor.BLUE,
+    itemsFor: ProductItemsFor.KIDS,
   },
-];
-
-export const PRODUCT_CATEGORIES = [
-  "All Categories",
-  "Electronics",
-  "Clothing",
-  "Wearables",
-  "Home & Garden",
-  "Sports",
-  "Books",
-  "Beauty",
 ];
 
 export const PRODUCT_BRANDS = [
@@ -184,24 +178,8 @@ export const PRODUCT_BRANDS = [
   "KidStuff",
 ];
 
-export const PRODUCT_COLORS = [
-  "black",
-  "white",
-  "red",
-  "green",
-  "blue",
-  "orange",
-  "pink",
-  "purple",
-  "yellow",
-  "gray",
-  "brown",
-  "cyan",
-  "lime",
-  "indigo",
-  "violet",
-];
+export const ITEMS_PER_PAGE = 7;
 
-export const PRODUCT_ITEMS_FOR = ["men", "women", "kids", "unisex"];
+export const PRODUCT_ITEMS_FOR = Object.values(ProductItemsFor);
 
 export const PRODUCT_RATINGS = [1, 2, 3, 4, 5];

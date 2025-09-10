@@ -24,9 +24,7 @@ export function Pagination({
   className = "",
 }: PaginationProps) {
   return (
-    <div
-      className={`flex items-center justify-between mt-6 pt-4 border-t ${className}`}
-    >
+    <div className={`flex items-center justify-between ${className}`}>
       <div className="text-sm text-muted-foreground">
         Showing {startIndex + 1} to {Math.min(endIndex, totalItems)} of{" "}
         {totalItems} entries

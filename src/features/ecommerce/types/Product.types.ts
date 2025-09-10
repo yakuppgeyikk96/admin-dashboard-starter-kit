@@ -1,23 +1,42 @@
 export type ProductStatus = "in-stock" | "low-stock" | "out-of-stock";
 
-export type ProductColor =
-  | "black"
-  | "white"
-  | "red"
-  | "green"
-  | "blue"
-  | "orange"
-  | "pink"
-  | "purple"
-  | "yellow"
-  | "gray"
-  | "brown"
-  | "cyan"
-  | "lime"
-  | "indigo"
-  | "violet";
+export enum ProductColor {
+  BLACK = "black",
+  WHITE = "white",
+  RED = "red",
+  GREEN = "green",
+  BLUE = "blue",
+  ORANGE = "orange",
+  PINK = "pink",
+  PURPLE = "purple",
+  BROWN = "brown",
+  CYAN = "cyan",
+  LIME = "lime",
+  INDIGO = "indigo",
+  GRAY = "gray",
+  VIOLET = "violet",
+  YELLOW = "yellow",
+}
 
-export type ProductItemsFor = "men" | "women" | "kids" | "unisex";
+export enum ProductItemsFor {
+  MEN = "men",
+  WOMEN = "women",
+  KIDS = "kids",
+  UNISEX = "unisex",
+}
+
+export enum ProductCategory {
+  ELECTRONICS = "Electronics",
+  CLOTHING = "Clothing",
+  ACCESSORIES = "Accessories",
+  HOME_AND_GARDEN = "Home & Garden",
+  SPORTS = "Sports",
+  BOOKS = "Books",
+  BEAUTY = "Beauty",
+  WEARABLES = "Wearables",
+  GAMES = "Games",
+  COMPUTERS = "Computers",
+}
 
 export interface Product {
   id: string;
@@ -25,7 +44,7 @@ export interface Product {
   description: string;
   price: number;
   originalPrice?: number;
-  category: string;
+  category: ProductCategory;
   brand: string;
   image: string;
   stock: number;

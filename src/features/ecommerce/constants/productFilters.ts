@@ -4,6 +4,9 @@ import {
   ProductFilterItemsFor,
   ProductFilterColors,
   ProductFilterRatings,
+  ProductCategory,
+  ProductItemsFor,
+  ProductColor,
 } from "@/features/ecommerce/types";
 
 export const PRODUCT_FILTERS_ITEMS_FOR: ProductFilterItemsFor = {
@@ -11,19 +14,19 @@ export const PRODUCT_FILTERS_ITEMS_FOR: ProductFilterItemsFor = {
   items: [
     {
       label: "Women",
-      value: "women",
+      value: ProductItemsFor.WOMEN,
     },
     {
       label: "Men",
-      value: "men",
+      value: ProductItemsFor.MEN,
     },
     {
       label: "Kids",
-      value: "kids",
+      value: ProductItemsFor.KIDS,
     },
     {
       label: "Unisex",
-      value: "unisex",
+      value: ProductItemsFor.UNISEX,
     },
   ],
 };
@@ -33,37 +36,37 @@ export const PRODUCT_FILTERS_CATEGORIES: ProductFilterCategories = {
   items: [
     {
       label: "Electronics",
-      value: "electronics",
+      value: ProductCategory.ELECTRONICS,
       count: 82,
     },
     {
       label: "Clothing",
-      value: "clothing",
+      value: ProductCategory.CLOTHING,
       count: 72,
     },
     {
       label: "Wearables",
-      value: "wearables",
+      value: ProductCategory.WEARABLES,
       count: 62,
     },
     {
       label: "Accessories",
-      value: "accessories",
+      value: ProductCategory.ACCESSORIES,
       count: 52,
     },
     {
       label: "Sports",
-      value: "sports",
+      value: ProductCategory.SPORTS,
       count: 42,
     },
     {
       label: "Games",
-      value: "games",
+      value: ProductCategory.GAMES,
       count: 32,
     },
     {
       label: "Computers",
-      value: "computers",
+      value: ProductCategory.COMPUTERS,
       count: 22,
     },
   ],
@@ -115,50 +118,50 @@ export const PRODUCT_FILTERS_COLORS: ProductFilterColors = {
   items: [
     {
       label: "Black",
-      value: "black",
-      color: "black",
+      value: ProductColor.BLACK,
+      color: ProductColor.BLACK,
       count: 45,
     },
     {
       label: "White",
-      value: "white",
-      color: "white",
+      value: ProductColor.WHITE,
+      color: ProductColor.WHITE,
       count: 38,
     },
     {
       label: "Red",
-      value: "red",
-      color: "red",
+      value: ProductColor.RED,
+      color: ProductColor.RED,
       count: 32,
     },
     {
       label: "Green",
-      value: "green",
-      color: "green",
+      value: ProductColor.GREEN,
+      color: ProductColor.GREEN,
       count: 28,
     },
     {
       label: "Blue",
-      value: "blue",
-      color: "blue",
+      value: ProductColor.BLUE,
+      color: ProductColor.BLUE,
       count: 42,
     },
     {
       label: "Orange",
-      value: "orange",
-      color: "orange",
+      value: ProductColor.ORANGE,
+      color: ProductColor.ORANGE,
       count: 25,
     },
     {
       label: "Pink",
-      value: "pink",
-      color: "pink",
+      value: ProductColor.PINK,
+      color: ProductColor.PINK,
       count: 18,
     },
     {
       label: "Purple",
-      value: "purple",
-      color: "purple",
+      value: ProductColor.PURPLE,
+      color: ProductColor.PURPLE,
       count: 22,
     },
   ],
